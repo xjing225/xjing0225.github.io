@@ -3,49 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog Page</title>
+<title>Alexa - Frontend Developer</title>
 <style>
   body {
     font-family: Arial, sans-serif;
     text-align: center;
-    padding-top: 50px;
+    background-color: #f0f0f0; /* Adjust the background color as needed */
+    margin: 0;
+    padding: 50px;
+  }
+  .container {
+    background-color: white;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Simple box shadow */
   }
   .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
     border-radius: 50%;
-    background-image: url("images/profile.jpg");
+    background-image: url("images/profile.jpg"); /* Update this with your image path */
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     margin: 0 auto;
+    border: 5px solid #fff; /* White border around the image */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Simple box shadow */
+    transform: translateY(-50%);
+    position: relative;
+    z-index: 2;
   }
-
-  .title {
-    font-size: 48px;
-    margin-top: 20px;
+  .info {
+    position: relative;
+    background: #7C5AC2; /* Your brand color */
+    border-radius: 20px;
+    padding: 100px 20px 20px; /* Adjust padding to fit your content */
+    color: #fff;
+    margin-top: -50px; /* Adjust margin to fit your design */
   }
-  .post-link {
-    font-size: 24px;
-    margin-top: 15px;
+  .info h1 {
+    margin: 0 0 10px;
   }
-  a {
+  .info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .contact-button {
+    background-color: #fff;
+    color: #7C5AC2;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
     text-decoration: none;
-    color: black;
-    display: block;
-  }
-  a:hover {
-    color: grey;
+    display: inline-block;
   }
 </style>
 </head>
 <body>
 
-<div class="profile-pic"></div>
-<h1 class="title">Hey, World.</h1>
-
-<div class="post-link"><a href="#">Exploring the Power of Music: How it Affects our Emotions</a></div>
-<div class="post-link"><a href="#">Discovering Hidden Treasures</a></div>
-<div class="post-link"><a href="#">Uncovering the Vibrant Underground</a></div>
+<div class="container">
+  <div class="profile-pic"></div>
+  <div class="info">
+    <h1>Hi, I'm Alexa</h1>
+    <p>Frontend developer<br>
+    High level experience in web design and development knowledge, producing quality work.</p>
+    <a href="#" class="contact-button">Contact Me</a>
+  </div>
+</div>
 
 </body>
 </html>
+

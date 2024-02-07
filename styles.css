@@ -24,15 +24,15 @@ body, html {
     color: white; 
     border-radius: 50%;
     display: inline-block;
-    text-align: center; /* This will horizontally center the text */
-    font-size: 18px; /* Adjust font-size as necessary */
-    vertical-align: middle; /* Aligns the element to the middle of the line */
-    text-decoration: none; /* This will remove the underline from the text */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover and active state */
+    text-align: center; 
+    font-size: 18px; 
+    vertical-align: middle; 
+    text-decoration: none; 
+    transition: background-color 0.3s, color 0.3s; 
   }
   
   .dot:hover, .dot.active {
-    background-color:white;/* The highlight color when hovered or active */
+    background-color:white;
     color: #399ed4; 
     text-decoration: none; 
   }
@@ -43,14 +43,39 @@ body, html {
     left: 50px;
   }
   .back-button {
-    color: #ffffff; /* Dark grey text color */
-    text-decoration: none; /* Remove underline from link */
-    font-size: 36px; /* Size of the text */
-    border-radius: 5px; /* Slightly rounded corners */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    color: #ffffff; 
+    text-decoration: none; 
+    font-size: 36px; 
+    border-radius: 5px; 
+    transition: all 0.3s ease; 
   }
 
   .back-button:hover {
     font-weight:bold;
     text-decoration: none;
   }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+    padding: 50px;
+    color: rgb(255, 255, 255); 
+  }
+  
+  .arrow.left {
+    left: 0;
+  }
+  
+  .arrow.right {
+    right: 0;
+  }
+  
+  .arrow:hover {
+    font-weight: bold;
+  }
+  

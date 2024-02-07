@@ -36,3 +36,20 @@ function goToPage(index) {
     highlightCurrentPageDot();
   });
   
+
+  // Function to navigate to the next or previous page
+function changePage(offset) {
+  var currentPageIndex = getCurrentPageIndex();
+  var nextPageIndex = currentPageIndex + offset;
+  var pages = ['index.html', 'project_1.html', 'project_2.html', 'project_3.html'];
+
+  // Ensure the next page index is within the bounds of the pages array
+  if (nextPageIndex < 0) {
+    nextPageIndex = pages.length - 1; // Loop back to the last page
+  } else if (nextPageIndex >= pages.length) {
+    nextPageIndex = 0; // Loop back to the first page
+  }
+
+  // Redirect to the next page
+  window.location.href = pages[nextPageIndex];
+}

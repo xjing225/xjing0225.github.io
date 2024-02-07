@@ -3,78 +3,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alexa - Frontend Developer</title>
+<link rel="stylesheet" href="styles.css">
+<title>Xiaojing (Jing) Portfolio</title>
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0; /* Adjust the background color as needed */
+  body, html {
+    font-family: 'Calibri',sans-serif;
     margin: 0;
-    padding: 50px;
+    padding: 0;
+    background-color: #ffffff; 
+    height: 100%;
   }
   .container {
-    background-color: white;
-    border-radius: 20px;
-    display: inline-block;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Simple box shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgba(146, 214, 180, 0.7), rgba(172, 226, 255, 0.7));
+  }
+  .content {
+  display: flex;
+  width: 72%;  
+  align-items: center; 
+  background: white;
+  padding: 50px; 
+  margin: 0 40px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 25px; 
+  box-sizing: border-box;
+}
+
+  .text-section {
+    text-align: left;
+    flex: 1;
   }
   .profile-pic {
-    width: 150px; /* Adjust size as needed */
-    height: 150px;
-    border-radius: 50%;
-    background-image: url("images/profile.jpg"); /* Update this with your image path */
+    width: 320px; 
+    height: 320px; 
+    background-image: url('images/profile2.jpg'); 
     background-size: cover;
     background-position: center;
-    margin: 0 auto;
-    border: 5px solid #fff; /* White border around the image */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Simple box shadow */
-    transform: translateY(-50%);
-    position: relative;
-    z-index: 2;
+    border-radius: 50%;
+    margin-left: 68px; 
   }
-  .info {
-    position: relative;
-    background: #7C5AC2; /* Your brand color */
-    border-radius: 20px;
-    padding: 100px 20px 20px; /* Adjust padding to fit your content */
-    color: #fff;
-    margin-top: -50px; /* Adjust margin to fit your design */
+  h1 {
+    font-size: 56px;
+    margin: 0;
   }
-  .info h1 {
-    margin: 0 0 10px;
+  p {
+    font-size: 20px;
+    line-height: 1.6
   }
-  .info p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+  .contact {
+    margin-top: 40px;
+    font-size: 18px;
+    color:rgb(129, 129, 129);
   }
-  .contact-button {
-    background-color: #fff;
-    color: #7C5AC2;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
+  .subtext {
+    margin-top: 3px;
+    font-size: 18px;
+    color:rgb(129, 129, 129);
+  }
+  a {
+    color: #399ed4;
     text-decoration: none;
-    display: inline-block;
+  }
+  a:hover {
+    font-weight:bold;
   }
 </style>
 </head>
 <body>
 
 <div class="container">
-  <div class="profile-pic"></div>
-  <div class="info">
-    <h1>Hi, I'm Alexa</h1>
-    <p>Frontend developer<br>
-    High level experience in web design and development knowledge, producing quality work.</p>
-    <a href="#" class="contact-button">Contact Me</a>
+  <div class="content">
+    <div class="text-section">
+      <h1>Hi, I'm Xiaojing</h1>
+      <p class = "subtext">Statistics/HCI Graduate</p>
+      <p class="intro">
+        Welcome &#x1F60A; This portfolio site showcases three of my latest projects:
+        <a href="project_1.html">"Browsing Insights"</a>, a Chrome extension for advanced web history filtering, comparison, and visualization;
+        <a href="project_2.html">"Netflix Originals Analysis"</a>, which uses web scraping and data visualization with Python to uncover Netflix production trends and IMDb ratings;
+        and <a href="project_3.html">"Twist-Con"</a>, a project dedicated to designing a VR controller that specifically enhances haptic feedback for twisting motions across various scenarios.
+      </p>      
+      <p class="contact">contact: xjing225@gmail.com | (61) 415860885 </p>
+    </div>
+    <div class="profile-pic"></div>
   </div>
 </div>
 
+<div class="navigation">
+  <a href="index.html" class="dot active">1</a>
+  <a href="project_1.html" class="dot">2</a>
+  <a href="project_2.html" class="dot">3</a>
+  <a href="project_3.html" class="dot">4</a>
+</div>
+<script src="navigation.js"></script>
 </body>
 </html>
-

@@ -1,0 +1,56 @@
+body, html {
+    font-family: 'Calibri', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+/* Navigation styles */
+.navigation {
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    width: 25px; 
+    height: 25px;
+    line-height: 25px;
+    margin: 0 20px;
+    background-color: transparent;
+    color: white; 
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center; /* This will horizontally center the text */
+    font-size: 18px; /* Adjust font-size as necessary */
+    vertical-align: middle; /* Aligns the element to the middle of the line */
+    text-decoration: none; /* This will remove the underline from the text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover and active state */
+  }
+  
+  .dot:hover, .dot.active {
+    background-color:white;/* The highlight color when hovered or active */
+    color: #399ed4; 
+    text-decoration: none; 
+  }
+  
+  .back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+  }
+  .back-button {
+    color: #ffffff; /* Dark grey text color */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 36px; /* Size of the text */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+
+  .back-button:hover {
+    font-weight:bold;
+    text-decoration: none;
+  }

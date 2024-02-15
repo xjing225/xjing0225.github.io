@@ -3,14 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
+<!-- <link rel="stylesheet" href="styles.css"> -->
 <title>Xiaojing (Jing) Portfolio</title>
 <style>
   body, html {
     font-family: 'Calibri',sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff; 
     height: 100%;
   }
   .container {
@@ -21,7 +18,7 @@
     box-sizing: border-box;
     background: linear-gradient(to top, rgba(146, 214, 180, 0.7), rgba(172, 226, 255, 0.7));
   }
-  .content {
+  /* .content {
   display: flex;
   width: 72%;  
   align-items: center; 
@@ -31,75 +28,120 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   border-radius: 25px; 
   box-sizing: border-box;
-}
+} */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%; /* Use percentage for width to be relative to the viewport */
+    align-items: center;
+    background: white;
+    padding: 2rem; /* Use rem for padding to scale with root font size */
+    margin: 0 auto; /* Center the content with auto margins */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem; 
+    box-sizing: border-box;
+  }
 
+  @media (max-width: 768px) {
+    .content {
+      padding: 1rem; 
+      border-radius: 1rem; 
+    }
+}
+  .text-section {
+      text-align: left;
+      flex: 1;
+    }
+/* 
   .text-section {
     text-align: left;
     flex: 1;
   }
   .profile-pic {
-    width: 320px; 
-    height: 320px; 
-    background-image: url('images/profile2.jpg'); 
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    margin-left: 68px; 
+  width: 80%; 
+  max-width: 320px; 
+  min-width: 150px; 
+  height: auto; 
+  background-image: url('images/profile2.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 20px auto; 
+} */
+
+
+/* Use rem for font sizes and margins to scale based on root font size */
+h1 {
+  font-size: 3.5rem;
+}
+
+.subtext {
+  font-size: 1.5rem; 
+  margin-top: 1rem;
+  color:rgb(46, 173, 173);
+
+}
+
+/* p, .contact, .subtext {
+  font-size: 1.25rem; 
+  margin-top: 1rem;
+} */
+/* 
+@media (max-width: 768px) {
+ 
+  html {
+    font-size: 14px; 
   }
+
+  .profile-pic {
+    width: 90%;
+  }
+
   h1 {
-    font-size: 56px;
-    margin: 0;
+    font-size: 3rem; 
   }
-  p {
-    font-size: 20px;
-    line-height: 1.6
+  p, .contact, .subtext {
+    font-size: 1rem;
   }
-  .contact {
-    margin-top: 40px;
-    font-size: 18px;
-    color:rgb(129, 129, 129);
-  }
-  .subtext {
-    margin-top: 3px;
-    font-size: 18px;
-    color:rgb(129, 129, 129);
-  }
+}
   a {
     color: #399ed4;
     text-decoration: none;
   }
   a:hover {
     font-weight:bold;
-  }
+  } */
 </style>
 </head>
+
+
 <body>
-  
 <div class="container">
-  <button  type="button" onclick="changePage(-1)" class="arrow left">&#10094;</button>
+  <!-- <button  type="button" onclick="changePage(-1)" class="arrow left">&#10094;</button> -->
   <div class="content">
     <div class="text-section">
       <h1>Hi, I'm Xiaojing</h1>
       <p class = "subtext">Statistics/HCI Graduate</p>
-      <p class="intro">
+      <!-- <p class="intro">
         Welcome &#x1F60A; This portfolio site showcases three of my latest projects:
         <a href="project_1.html">"Browsing Insights"</a>, a Chrome extension for advanced web history filtering, comparison, and visualization;
-        <a href="project_2.html">"Netflix Originals Analysis"</a>, which uses web scraping and data visualization with Python to uncover Netflix production trends and IMDb ratings;
+        <a href="project_2.html">"Netflix Originals Analysis"</a>, which uses web scraping and data visualization with Python to uncover Netflix production trends and IMDb audience reception;
         and <a href="project_3.html">"Twist-Con"</a>, a project dedicated to designing a VR controller that specifically enhances haptic feedback for twisting motions across various scenarios.
       </p>      
       <p class="contact">contact: xjing225@gmail.com | (61) 415860885 </p>
     </div>
-    <div class="profile-pic"></div>
+    <div class="profile-pic"></div> -->
   </div>
-  <button type="button" onclick="changePage(1)" class="arrow right">&#10095;</button>
+  <!-- <button type="button" onclick="changePage(1)" class="arrow right">&#10095;</button> -->
 </div>
 
-<div class="navigation">
+<!-- <div class="navigation">
   <a href="index.html" class="dot active">1</a>
   <a href="project_1.html" class="dot">2</a>
   <a href="project_2.html" class="dot">3</a>
   <a href="project_3.html" class="dot">4</a>
-</div>
-<script src="navigation.js"></script>
+</div> -->
+<!-- <script src="navigation.js"></script> -->
 </body>
 </html>

@@ -3,144 +3,207 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- <link rel="stylesheet" href="styles.css"> -->
 <title>Xiaojing (Jing) Portfolio</title>
 <style>
   body, html {
     font-family: 'Calibri',sans-serif;
-    height: 100%;
   }
-  .container {
+  .background {
     display: flex;
     justify-content: center;
     align-items: center; 
-    height: 100vh; 
-    box-sizing: border-box;
     background: linear-gradient(to top, rgba(146, 214, 180, 0.7), rgba(172, 226, 255, 0.7));
   }
-  /* .content {
-  display: flex;
-  width: 72%;  
-  align-items: center; 
-  background: white;
-  padding: 50px; 
-  margin: 0 40px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  border-radius: 25px; 
-  box-sizing: border-box;
-} */
+
   .content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 80%; /* Use percentage for width to be relative to the viewport */
+    flex-direction: column; 
+    justify-content: center; 
     align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80%;
+    margin-top: 5rem;
     background: white;
-    padding: 2rem; /* Use rem for padding to scale with root font size */
-    margin: 0 auto; /* Center the content with auto margins */
+    padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 2rem; 
     box-sizing: border-box;
   }
 
+
   @media (max-width: 768px) {
     .content {
+      width: 90%; 
+      margin-top: 2rem;
       padding: 1rem; 
       border-radius: 1rem; 
     }
-}
-  .text-section {
-      text-align: left;
-      flex: 1;
-    }
-/* 
-  .text-section {
+  }
+  h1{
+    font-size : 3rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+  .subtext {
+    font-size: 1.2rem;
+    text-align: center;
+    color:rgb(142, 142, 142);
+    margin-top: 0rem;
+    margin-bottom: 0.3rem;
+  }
+
+  @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .subtext {
+        font-size: 0.9rem;
+      }
+  }
+  .profile-pic {
+    width: 25rem;
+    height: 20rem;
+    text-align: center; 
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden; 
+    display: inline-block;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+  }
+  .profile-pic img {
+      width: 100%; 
+      height: auto; 
+  }
+
+  @media (max-width: 768px) {
+  .profile-pic {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%; 
+  }
+  }
+  .project-pic {
+    width: 45rem;
+    height: 25rem;
+    text-align: center; 
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden; 
+    display: inline-block;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+  }
+  .project-pic img {
+    width: 100%; 
+      height: auto; 
+  }
+
+  @media (max-width: 768px) {
+    .project-pic {
+    width: 18rem;
+    height: 10rem;
+  }
+  }
+
+  p{
+    width: 83%;
+    line-height: 1.5;
     text-align: left;
-    flex: 1;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
-  .profile-pic {
-  width: 80%; 
-  max-width: 320px; 
-  min-width: 150px; 
-  height: auto; 
-  background-image: url('images/profile2.jpg');
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-  margin: 20px auto; 
-} */
-
-
-/* Use rem for font sizes and margins to scale based on root font size */
-h1{
-  font-size : 4vw;
-}
-.subtext {
-  font-size: 2vw;
-  margin-top: 1vw;
-  color:rgb(46, 173, 173);
-
-}
-
-/* p, .contact, .subtext {
-  font-size: 1.25rem; 
-  margin-top: 1rem;
-} */
-/* 
-@media (max-width: 768px) {
- 
-  html {
-    font-size: 14px; 
+  
+  @media (max-width: 768px) {
+    p{
+      font-size: 1rem;
+    }
   }
 
-  .profile-pic {
-    width: 90%;
-  }
-
-  h1 {
-    font-size: 3rem; 
-  }
-  p, .contact, .subtext {
-    font-size: 1rem;
-  }
-}
   a {
     color: #399ed4;
     text-decoration: none;
+    font-size: 1.5rem;
   }
   a:hover {
     font-weight:bold;
-  } */
+  }
+  @media (max-width: 768px) {
+    a {
+    font-size: 1rem;
+  }
+  }
+  .highlight {
+    color: #399ed4;
+    font-weight: bold;
+  }
+  .dashed-divider {
+      border: none;
+      border-top: 2px dashed rgb(4, 126, 126);
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+  }
+
 </style>
 </head>
 
-
 <body>
-<div class="container">
-  <!-- <button  type="button" onclick="changePage(-1)" class="arrow left">&#10094;</button> -->
+<div class="background">
   <div class="content">
-    <div class="text-section">
-      <h1>Hi, I'm Xiaojing</h1>
-      <p class = "subtext">Statistics/HCI Graduate</p>
-      <!-- <p class="intro">
-        Welcome &#x1F60A; This portfolio site showcases three of my latest projects:
-        <a href="project_1.html">"Browsing Insights"</a>, a Chrome extension for advanced web history filtering, comparison, and visualization;
-        <a href="project_2.html">"Netflix Originals Analysis"</a>, which uses web scraping and data visualization with Python to uncover Netflix production trends and IMDb audience reception;
-        and <a href="project_3.html">"Twist-Con"</a>, a project dedicated to designing a VR controller that specifically enhances haptic feedback for twisting motions across various scenarios.
-      </p>      
-      <p class="contact">contact: xjing225@gmail.com | (61) 415860885 </p>
-    </div>
-    <div class="profile-pic"></div> -->
-  </div>
-  <!-- <button type="button" onclick="changePage(1)" class="arrow right">&#10095;</button> -->
-</div>
+    <h1>Hi, I'm Xiaojing Guo (Jing)</h1>
+    <p class = "subtext">Statistics/HCI Graduate</p>
+    <p class="subtext">&#128231;xjing225@gmail.com &#x1F4DE;(61) 415860885</p>
+        <figure class="profile-pic">
+          <img src="images/profile2.jpg" alt="Profile Photo"/>
+        </figure>
+        <p class="intro">
+          Welcome &#x1F60A; This portfolio site showcases three of my latest projects:
+          <a href="#section1"><u>Browsing Insights</u></a>, a Chrome extension for advanced web history filtering, comparison, and visualization;
+          <a href="project_2.html"><u>Netflix Originals Analysis</u></a>, which uses web scraping and data visualization with Python to uncover Netflix production trends and IMDb audience reception;
+          and <a href="project_3.html"><u>Twist-Con</u></a>, a project dedicated to designing a VR controller that specifically enhances haptic feedback for twisting motions across various scenarios.
+        </p>
+      
+    
+      <!-- project 1  -->
+      <div id="section1"></div>
+        <h1>Browsing Insights</h1>
+        <p class="subtext">Keywords: Chrome Extension, Chrome API, HTML, CSS, JavaScript</p>
+        <div class="project-pic">
+          <img src="images/bi.png" alt="Browsing Insights"/>
+        </div>
+        <h2>Overview</h2>
+        <p>"Browsing Insights" offers practical features for users looking to track and analyze their browsing histories. 
+          It includes an advanced search function, a smart tracking system with customizable filters for date, time, and domain, 
+          and a 'Visit Trends' feature that provides graphical insights into website visit counts over different time periods. 
+          Ideal for users who want a clear overview and a better reflection of their online activity. Available for installation from the
+          <a href="https://chromewebstore.google.com/detail/browsing-insights/bfmammhikjndhdpnlldacijbmnlmjbii"><u>Chrome Web Store</u></a>.</p>
+        <h2>About this Study</h2>
+          <p>Default browser history tools fall short in terms of functionality and flexibility for users seeking deeper insights into their 
+            browsing activities, standard browser history tabs like those in Google Chrome or Microsoft Edge only provide a chronological list
+            of visited sites, lacking functionalities for <span class = "highlight">flexible navigation</span> and <span class = "highlight">
+              reflective practices</span>. Seeing this gap, this study aimed to develop an extension to the Google Chrome browser which not only 
+              logs users' histories but offers features that assist with flexible, site-based tracking and gaining a deeper understanding of 
+              online activities through data visualization. It has capabilities for searching, sorting, customizable record-tracking by date, 
+              time, or site domain, and graphical displays of site visits across different time frames.</p>
+            <p>On the technical side, the tool was developed with Chrome history API for data retrieval, and considerations were given to the 
+            overall layout and functionalities of the extension. <span class = "highlight">User-friendly features</span>, such as infinite scrolling, debounced search,
+            and suggestion lists for typed information were integrated. Guidance was provided on the homepage, and error prevention 
+            mechanisms were embedded for various user inputs. Further, users had viewing options for the data visualization of stacked or 
+            non-stacked comparative bar charts. For flexibility, users could also decide which site or sites they wanted to include or 
+            exclude from their tracking.</p>
+        <h2>Source Code</h2>
+          <a href="https://github.com/xjing0225/HCI-Project">https://github.com/xjing0225/HCI-Project</a>
+        
 
-<!-- <div class="navigation">
-  <a href="index.html" class="dot active">1</a>
-  <a href="project_1.html" class="dot">2</a>
-  <a href="project_2.html" class="dot">3</a>
-  <a href="project_3.html" class="dot">4</a>
-</div> -->
-<!-- <script src="navigation.js"></script> -->
+        <!-- project 2  -->
+
+
+
+
+
+  </div>
+</div>
 </body>
 </html>

@@ -52,13 +52,22 @@
     margin-top: 0rem;
     margin-bottom: 0.3rem;
   }
-
+  .subtext-b {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #399ed4;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+  }
   @media (max-width: 768px) {
       h1 {
         font-size: 1.8rem;
       }
       .subtext {
         font-size: 0.9rem;
+      }
+      .subtext-b {
+        font-size: 1.1rem;
       }
   }
   .profile-pic {
@@ -98,12 +107,12 @@
   }
   .project-pic img {
     width: 100%; 
-      height: auto; 
+    height: auto; 
   }
 
   @media (max-width: 768px) {
     .project-pic {
-    width: 18rem;
+    width: 15rem;
     height: 10rem;
   }
   }
@@ -139,70 +148,132 @@
     color: #399ed4;
     font-weight: bold;
   }
-  .dashed-divider {
-      border: none;
-      border-top: 2px dashed rgb(4, 126, 126);
-      margin-top: 3rem;
-      margin-bottom: 3rem;
+
+  .divider1, .divider2, .divider3{
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border: none;
   }
+
+  .divider1::after {
+    content:"\1F433";
+    font-size: 1.5rem;
+  }
+  .divider2::after {
+    content:"\1F433\1F433";
+    font-size: 1.5rem;
+  }
+  .divider3::after {
+    content:"\1F433\1F433\1F433";
+    font-size: 1.5rem;
+  }
+
 
 </style>
 </head>
 
 <body>
+  
 <div class="background">
   <div class="content">
     <h1>Hi, I'm Xiaojing Guo (Jing)</h1>
     <p class = "subtext">Statistics/HCI Graduate</p>
     <p class="subtext">&#128231;xjing225@gmail.com &#x1F4DE;(61) 415860885</p>
-        <figure class="profile-pic">
-          <img src="images/profile2.jpg" alt="Profile Photo"/>
-        </figure>
-        <p class="intro">
-          Welcome &#x1F60A; This portfolio site showcases three of my latest projects:
-          <a href="#section1"><u>Browsing Insights</u></a>, a Chrome extension for advanced web history filtering, comparison, and visualization;
-          <a href="project_2.html"><u>Netflix Originals Analysis</u></a>, which uses web scraping and data visualization with Python to uncover Netflix production trends and IMDb audience reception;
-          and <a href="project_3.html"><u>Twist-Con</u></a>, a project dedicated to designing a VR controller that specifically enhances haptic feedback for twisting motions across various scenarios.
-        </p>
+    <figure class="profile-pic">
+      <img src="images/profile2.jpg" alt="Profile Photo"/>
+    </figure>
+    <p class="intro">
+      Welcome &#x1F60A; This portfolio site showcases three of my latest projects:
+      <a href="#section1"><u>Browsing Insights</u></a>, a Chrome extension for advanced web history filtering, comparison, and visualization;
+      <a href="#section2"><u>Netflix Originals Analysis</u></a>, which uses web scraping and data visualization with Python to uncover Netflix production trends and IMDb audience reception;
+      and <a href="#section3"><u>Twist-Con</u></a>, a project dedicated to designing a VR controller that specifically enhances haptic feedback for twisting motions across various scenarios.
+    </p>
       
-    
-      <!-- project 1  -->
-      <div id="section1"></div>
-        <h1>Browsing Insights</h1>
-        <p class="subtext">Keywords: Chrome Extension, Chrome API, HTML, CSS, JavaScript</p>
-        <div class="project-pic">
-          <img src="images/bi.png" alt="Browsing Insights"/>
-        </div>
-        <h2>Overview</h2>
-        <p>"Browsing Insights" offers practical features for users looking to track and analyze their browsing histories. 
-          It includes an advanced search function, a smart tracking system with customizable filters for date, time, and domain, 
-          and a 'Visit Trends' feature that provides graphical insights into website visit counts over different time periods. 
-          Ideal for users who want a clear overview and a better reflection of their online activity. Available for installation from the
-          <a href="https://chromewebstore.google.com/detail/browsing-insights/bfmammhikjndhdpnlldacijbmnlmjbii"><u>Chrome Web Store</u></a>.</p>
-        <h2>About this Study</h2>
-          <p>Default browser history tools fall short in terms of functionality and flexibility for users seeking deeper insights into their 
-            browsing activities, standard browser history tabs like those in Google Chrome or Microsoft Edge only provide a chronological list
-            of visited sites, lacking functionalities for <span class = "highlight">flexible navigation</span> and <span class = "highlight">
-              reflective practices</span>. Seeing this gap, this study aimed to develop an extension to the Google Chrome browser which not only 
-              logs users' histories but offers features that assist with flexible, site-based tracking and gaining a deeper understanding of 
-              online activities through data visualization. It has capabilities for searching, sorting, customizable record-tracking by date, 
-              time, or site domain, and graphical displays of site visits across different time frames.</p>
-            <p>On the technical side, the tool was developed with Chrome history API for data retrieval, and considerations were given to the 
-            overall layout and functionalities of the extension. <span class = "highlight">User-friendly features</span>, such as infinite scrolling, debounced search,
-            and suggestion lists for typed information were integrated. Guidance was provided on the homepage, and error prevention 
-            mechanisms were embedded for various user inputs. Further, users had viewing options for the data visualization of stacked or 
-            non-stacked comparative bar charts. For flexibility, users could also decide which site or sites they wanted to include or 
-            exclude from their tracking.</p>
-        <h2>Source Code</h2>
-          <a href="https://github.com/xjing0225/HCI-Project">https://github.com/xjing0225/HCI-Project</a>
+
         
+    <!-- project 1  -->
+    <div id="section1"></div>
+    <hr class="divider1">
+    <h1>Browsing Insights</h1>
+    <p class="subtext-b">Keywords: Chrome Extension, Chrome API, HTML, CSS, JavaScript</p>
+    <div class="project-pic">
+      <img src="images/bi.png" alt="Browsing Insights"/>
+    </div>
+    <h2>Overview</h2>
+      <p>"Browsing Insights" offers practical features for users looking to track and analyze their browsing histories. 
+        It includes an advanced search function, a smart tracking system with customizable filters for date, time, and domain, 
+        and a 'Visit Trends' feature that provides graphical insights into website visit counts over different time periods. 
+        Ideal for users who want a clear overview and a better reflection of their online activity. Available for installation from the
+        <a href="https://chromewebstore.google.com/detail/browsing-insights/bfmammhikjndhdpnlldacijbmnlmjbii"><u>Chrome Web Store</u></a>.</p>
+    <h2>About this Study</h2>
+      <p>Default browser history tools fall short in terms of functionality and flexibility for users seeking deeper insights into their 
+      browsing activities, standard browser history tabs like those in Google Chrome or Microsoft Edge only provide a chronological list
+      of visited sites, lacking functionalities for <span class = "highlight">flexible navigation</span> and <span class = "highlight">
+      reflective practices</span>. Seeing this gap, this study aimed to develop an extension to the Google Chrome browser which not only 
+      logs users' histories but offers features that assist with flexible, site-based tracking and gaining a deeper understanding of 
+      online activities through data visualization. It has capabilities for searching, sorting, customizable record-tracking by date, 
+      time, or site domain, and graphical displays of site visits across different time frames.</p>
+      <p>On the technical side, the tool was developed with Chrome history API for data retrieval, and considerations were given to the 
+      overall layout and functionalities of the extension. <span class = "highlight">User-friendly features</span>, such as infinite scrolling, debounced search,
+      and suggestion lists for typed information were integrated. Guidance was provided on the homepage, and error prevention 
+      mechanisms were embedded for various user inputs. Further, users had viewing options for the data visualization of stacked or 
+      non-stacked comparative bar charts. For flexibility, users could also decide which site or sites they wanted to include or 
+      exclude from their tracking.</p>
+    <h2>Source Code</h2>
+    <a href="https://github.com/xjing0225/HCI-Project">https://github.com/xjing0225/HCI-Project</a>
 
-        <!-- project 2  -->
+
+      <!-- project 2  -->
+      <div id="section2"></div>
+      <hr class="divider2">
+        <h1>Netflix Originals Data Analysis</h1>
+        <p class="subtext-b">Keywords: web-scraping, data visualization, selenium, matplotlib, word clouds</p>
+        <div class="project-pic">
+          <img src="images/nf.jpg" alt="Netflix Logo" />
+          <figcaption>Netflix Logo – Copyright Netflix</figcaption>
+        </div>
+        <h2>Objective</h2>
+        <p>The objective of this study is to conduct a comprehensive examination of Netflix Original productions,  
+          leveraging data scraped from IMDb and focusing on their proliferation, audience reception, and thematic diversity from 2012 to 2023. 
+          The primary focus of this research is on data collection and visualization, aiming to illustrate patterns in <span class = "highlight">production volume, genre 
+          popularity, and perceived quality </span>through IMDB ratings. It seeks to provide insightful visual representations and to understand trends 
+          and preferences in Netflix Original content, highlighting the types of content that resonate with audiences and how Netflix's content 
+          creation strategies align with viewer preferences.</p>
+        <h2>Findings</h2>
+        <p>
+          The number of Netflix original productions exhibited a steady increase from 2012 to 2020, peaking in 2022 before experiencing a 
+          slight drop in 2023. From 2017 to 2020, each genre saw growth in production, with drama and comedy showing the most significant 
+          increases. Genres such as war, talk shows, westerns, and musicals remained relatively stable from 2017 to 2023. Following the peak
+           in 2022, all genres experienced a drop in 2023, except for history and thriller, which saw a noticeable increase</p>
+
+        <p>The most prevalent content ratings among the shows were MA15+/M (for mature audiences). Despite the variation in ratings, 
+          there was no significant differentiation in IMDb scores. Genre-wise, IMDb scores varied, with history and war receiving the 
+          highest scores, while horror and romance received the lowest.</p>
+
+        <p>The most produced genres align with those in the top 10 voted programs on IMDb each year (2012-2023), including "drama", "comedy",
+           "documentary", and "crime". However, IMDb scores for these top-voted programs have declined in recent years, compared to before 
+           2016. Word clouds associated with these popular programs revealed themes such as "world", "new", "relationship", "father", and 
+           "friends". The top 10 programs with the highest IMDb ratings each year predominantly fell into genres like "drama", "comedy", 
+           "crime", and "animation", with keywords in their descriptions including "family", "child", "protagonist", and "friend".</p>
 
 
+        <h2>Source Code</h2>
+        <a href="https://github.com/xjing0225/xjing0225.github.io/blob/main/Netflix%20Releases%20Data%20Analysis.ipynb" >Netflix Originals Data Analysis.ipynb</a>
 
-
-
+    <!-- project 3  -->
+    <div id="section3"></div>
+    <hr class="divider3">
+    <h1>Twist Con</h1>
+    <p class="subtext-b">Keywords: Unity 3D, VR Games, Arduino</p>
+    <div class="project-pic">
+      <img src="images/tc1.png" alt="Twsit Con"/>
+    </div>
+    <h2>Overview</h2>
+      <p></p>
+    <h2>About this Study</h2>
+      <p></p>
   </div>
 </div>
 </body>

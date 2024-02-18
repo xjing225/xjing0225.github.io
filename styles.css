@@ -1,0 +1,182 @@
+body, html {
+    font-family: 'Calibri',sans-serif;
+  }
+  .background {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: linear-gradient(to top, rgba(146, 214, 180, 0.7), rgba(172, 226, 255, 0.7));
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80%;
+    margin-top: 5rem;
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem; 
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      width: 90%; 
+      margin-top: 2rem;
+      padding: 1rem; 
+      border-radius: 1rem; 
+    }
+  }
+  h1{
+    font-size : 3rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+  .subtext {
+    font-size: 1.2rem;
+    text-align: center;
+    color:rgb(142, 142, 142);
+    margin-top: 0rem;
+    margin-bottom: 0.3rem;
+  }
+  .subtext-b {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #399ed4;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .subtext {
+        font-size: 0.9rem;
+      }
+      .subtext-b {
+        font-size: 1.1rem;
+      }
+  }
+  .profile-pic {
+    width: 25rem;
+    height: 20rem;
+    text-align: center; 
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden; 
+    display: inline-block;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+  }
+  .profile-pic img {
+      width: 100%; 
+      height: auto;
+  }
+
+  @media (max-width: 768px) {
+  .profile-pic {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%; 
+  }
+  }
+  .project-pic {
+    width: 46rem;
+    height: 28rem;
+    text-align: center; 
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden; 
+    display: inline-block;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .project-pic figcaption {
+  color: #5a5a5a;
+  font-size: 1.2rem;
+  text-align: center; 
+  font-style: italic;
+}
+
+  .project-pic img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  @media (max-width: 768px) {
+    .project-pic {
+    width: 15rem;
+    height: 10rem;
+  }
+    .project-pic figcaption {
+    color: #5a5a5a;
+    font-size: 0.65rem;
+    text-align: center; 
+    font-style: italic;
+  }
+    
+  }
+
+  p{
+    width: 83%;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    p{
+      font-size: 1rem;
+    }
+  }
+
+  a {
+    color: #399ed4;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  a:hover {
+    font-weight:bold;
+  }
+  @media (max-width: 768px) {
+    a {
+    font-size: 1rem;
+  }
+  }
+  .highlight {
+    color: #399ed4;
+    font-weight: bold;
+  }
+
+  .divider1, .divider2, .divider3, .divider4{
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border: none;
+  }
+
+  .divider1::after {
+    content:"\1F433";
+    font-size: 1.5rem;
+  }
+  .divider2::after {
+    content:"\1F433\1F433";
+    font-size: 1.5rem;
+  }
+  .divider3::after {
+    content:"\1F433\1F433\1F433";
+    font-size: 1.5rem;
+  }
+  .divider3::after {
+    font-size: 2rem;
+  }
+

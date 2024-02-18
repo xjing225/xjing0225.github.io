@@ -180,3 +180,18 @@ body, html {
     font-size: 2rem;
   }
 
+  .language-switch {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-color: rgb(82, 198, 173);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  /* Ensure your content container has a relative position for the button to position correctly */
+  .button-container {
+    position: relative;
+  }
+

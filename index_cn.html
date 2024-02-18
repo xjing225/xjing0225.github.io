@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xiaojing (Jing) Portfolio</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  
+<div class="background">
+  <div class="content">
+    <div class="content-container">
+      <button onclick="window.location.href='index.html';" class="language-switch">English</button>
+    </div>
+    <div id="section0"></div>
+    <h1>Hi, 这里是小菁</h1>
+    <p class = "subtext">统计学/人机交互学毕业生</p>
+    <p class="subtext">&#128231;xjing225@qq.com &#x1F4DE; 15309274093</p>
+    <figure class="profile-pic">
+      <img src="images/profile2.jpg" alt="Profile Photo"/>
+    </figure>
+    <p class="intro">
+      哈喽 😊 这个作品集网页展示了我近期的三个项目：<a href="#section1"><u>Browsing Insights</u></a>，一个用于网页浏览历史过滤、
+      比较和可视化的Chrome扩展；<a href="#section2"><u>"Netflix影视作品分析"</u></a>，
+      通过网页爬虫和Python数据可视化展示Netflix旗下影视作品发布趋势以及IMDb上的观众反馈；和 <a href="#section3"><u>Twist-Con</u></a>，一个为增强扭转动作所关联触觉反馈
+      设计的简易VR手柄。
+    </p>
+      
+
+        
+    <!-- project 1  -->
+    <div id="section1"></div>
+    <hr class="divider1">
+    <h1>Browsing Insights</h1>
+    <p class="subtext-b">关键词: Chrome Extension, Chrome API, HTML, CSS, JavaScript</p>
+    <div class="project-pic">
+      <img src="images/bi.png" alt="Browsing Insights"/>
+    </div>
+    <h2>Overview</h2>
+      <p>"Browsing Insights" offers practical features for users looking to track and analyze their browsing histories. 
+        It includes an advanced search function, a smart tracking system with customizable filters for date, time, and domain, 
+        and a 'Visit Trends' feature that provides graphical insights into website visit counts over different time periods. 
+        Ideal for users who want a clear overview and a better reflection of their online activity. Available for installation from the
+        <a href="https://chromewebstore.google.com/detail/browsing-insights/bfmammhikjndhdpnlldacijbmnlmjbii"><u>Chrome Web Store</u></a>.</p>
+    <h2>About this Study</h2>
+      <p>Default browser history tools fall short in terms of functionality and flexibility for users seeking deeper insights into their 
+      browsing activities, standard browser history tabs like those in Google Chrome or Microsoft Edge only provide a chronological list
+      of visited sites, lacking functionalities for <span class = "highlight">flexible navigation</span> and <span class = "highlight">
+      reflective practices</span>. Seeing this gap, this study aimed to develop an extension to the Google Chrome browser which not only 
+      logs users' histories but offers features that assist with flexible, site-based tracking and gaining a deeper understanding of 
+      online activities through data visualization. It has capabilities for searching, sorting, customizable record-tracking by date, 
+      time, or site domain, and graphical displays of site visits across different time frames.</p>
+      <p>On the technical side, the tool was developed with Chrome history API for data retrieval, and considerations were given to the 
+      overall layout and functionalities of the extension. <span class = "highlight">User-friendly features</span>, such as infinite scrolling, debounced search,
+      and suggestion lists for typed information were integrated. Guidance was provided on the homepage, and error prevention 
+      mechanisms were embedded for various user inputs. Further, users had viewing options for the data visualization of stacked or 
+      non-stacked comparative bar charts. For flexibility, users could also decide which site or sites they wanted to include or 
+      exclude from their tracking.</p>
+    <h2>Source Code</h2>
+    <a href="https://github.com/xjing0225/HCI-Project">https://github.com/xjing0225/HCI-Project</a>
+
+
+      <!-- project 2  -->
+      <div id="section2"></div>
+      <hr class="divider2">
+        <h1>Netflix Originals Data Analysis</h1>
+        <p class="subtext-b">Keywords: web-scraping, data visualization, selenium, matplotlib, word clouds</p>
+        <div class="project-pic">
+          <img src="images/nf.jpg" alt="Netflix Logo" />
+          <figcaption>Netflix Logo – Copyright Netflix</figcaption>
+        </div>
+        <h2>Objective</h2>
+        <p>The objective of this study is to conduct a comprehensive examination of Netflix Original productions,  
+          leveraging data scraped from IMDb and focusing on their proliferation, audience reception, and thematic diversity from 2012 to 2023. 
+          The primary focus of this research is on data collection and visualization, aiming to illustrate patterns in <span class = "highlight">production volume, genre 
+          popularity, and perceived quality </span>through IMDB ratings. It seeks to provide insightful visual representations and to understand trends 
+          and preferences in Netflix Original content, highlighting the types of content that resonate with audiences and how Netflix's content 
+          creation strategies align with viewer preferences.</p>
+        <h2>Findings</h2>
+        <p>
+          The number of Netflix original productions exhibited a steady increase from 2012 to 2020, peaking in 2022 before experiencing a 
+          slight drop in 2023. From 2017 to 2020, each genre saw growth in production, with drama and comedy showing the most significant 
+          increases. Genres such as war, talk shows, westerns, and musicals remained relatively stable from 2017 to 2023. Following the peak
+           in 2022, all genres experienced a drop in 2023, except for history and thriller, which saw a noticeable increase</p>
+
+        <p>The most prevalent content ratings among the shows were MA15+/M (for mature audiences). Despite the variation in ratings, 
+          there was no significant differentiation in IMDb scores. Genre-wise, IMDb scores varied, with history and war receiving the 
+          highest scores, while horror and romance received the lowest.</p>
+
+        <p>The most produced genres align with those in the top 10 voted programs on IMDb each year (2012-2023), including Drama, Comedy,
+           Documentary, and Crime. However, IMDb scores for these top-voted programs have declined in recent years, compared to before 
+           2016. Word clouds associated with these popular programs revealed themes such as "world", "new", "relationship", "father", and 
+           "friends". The top 10 programs with the highest IMDb ratings each year predominantly fell into genres like Drama, Comedy, 
+           Crime, and Animation, with keywords in their descriptions including "family", "child", "protagonist", and "friend".</p>
+
+
+        <h2>Source Code</h2>
+        <a href="https://github.com/xjing0225/xjing0225.github.io/blob/main/Netflix%20Releases%20Data%20Analysis.ipynb" >Netflix Originals Data Analysis.ipynb</a>
+
+    <!-- project 3  -->
+    <div id="section3"></div>
+    <hr class="divider3">
+    <h1>Twist Con</h1>
+    <p class="subtext-b">Keywords: Unity 3D, VR Games, Arduino</p>
+    <div class="project-pic">
+      <img src="images/tc_head.png" alt="Twsit Con"/>
+    </div>
+    <h2>Overview</h2>
+    <p>The objective of this project was to design a controller that<span class = "highlight"> enhances haptics for VR experiences.</span> Traditional VR controllers,
+      while designed to accommodate the most common use cases and interactions, fall short in delivering realistic haptic feedback for specific 
+      scenarios. That's where Twist-Con comes into place: a VR controller specifically designed to simulate the haptic sensations associated with 
+      various <span class = "highlight">twisting motions</span> and scenarios.</p>
+    <div class="project-pic">
+      <img src="images/gif1.gif" alt="Twsit Con"/>
+      <figcaption>Controller w/o realistic haptic feedback</figcaption>
+    </div>
+    <h2>About this Study</h2>
+      <p>
+        At the heart of the controller is a hobby motor with a built-in encoder, which utilizes PID control logic to achieve the haptic feedback of resistence torque. This 
+        system is programmed using Arduino and a UNO board. To house the hobby motor, the controller's body is constructed from laser-cut plywood pieces that tessellate to secure the motor. This 
+        assembly is enhanced by a living hinge pattern on the arm holder for added flexibility and comfort. Additionally, three types of 
+        3D-printed knobs can be mounted atop the motoe's shaft, enabling users to engage with twisting actions on objects of various shapes.
+      </p>
+      <div class="project-pic">
+        <img src="images/modelgif1.gif" alt="Twsit Con"/>
+        <figcaption>Components of Twist-Con</figcaption>
+      </div>
+      <div class="project-pic">
+        <img src="images/modelgif2.gif" alt="Twsit Con"/>
+        <figcaption>The assembled product</figcaption>
+      </div>
+      <p>
+      The VR game, developed in Unity, features three distinct scenarios designed to immerse users in the tactile experiences of: manipulating a motorcycle handle, turning a peppermill cap, and winding up a toy robot.
+      </p>
+      <div class="project-pic">
+        <img src="images/spinny.gif" alt="Twsit Con"/>
+        <figcaption>Demo of wind up robot toy</figcaption>
+      </div>
+      <h2>Introduction Video</h2>
+      <a href="https://youtu.be/AAnf_hnPTeo">https://youtu.be/AAnf_hnPTeo</a>
+
+      <hr class="divider4">
+      <h1>THANK YOU &#x1F60A;</h1>
+      <a href="#section0">Back to Top  &#8593;</a>
+  </div>
+</div>
+</body>
+</html>

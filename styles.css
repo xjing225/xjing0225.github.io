@@ -51,6 +51,16 @@ body, html {
     margin-top: 0.2rem;
     margin-bottom: 1rem;
   }
+  .subtext-l {
+    color: #399ed4;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+  }
+  .subtext-l:hover {
+    font-weight:bold;
+  }
+
   @media (max-width: 768px) {
       h1 {
         font-size: 1.8rem;
@@ -60,6 +70,10 @@ body, html {
       }
       .subtext-b {
         font-size: 1.1rem;
+      }
+      .subtext-l {
+        font-size: 0.9rem;
+        margin-left: 0.3rem;
       }
   }
   .profile-pic {
@@ -189,9 +203,5 @@ body, html {
     padding: 10px;
     border: none;
     cursor: pointer;
-  }
-  /* Ensure your content container has a relative position for the button to position correctly */
-  .button-container {
-    position: relative;
   }
 

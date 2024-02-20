@@ -10,139 +10,117 @@
   
 <div class="background">
   <div class="content">
-    <div class="content-container">
+    <div class="button-container">
       <button onclick="window.location.href='index.html';" class="language-switch">English</button>
     </div>
     <div id="section0"></div>
     <h1>Hi, 这里是小菁</h1>
     <p class = "subtext">统计学/人机交互学毕业生</p>
-    <p class="subtext">&#128231;xjing225@qq.com &#x1F4DE; 15309274093</p>
+    <p class="subtext">&#128231;xjing225@qq.com &#x1F4DE; 15309274093 <a class = "subtext-l" href="https://www.linkedin.com/in/xiaojing-guo-3b944527b/">LinkedIn </a></p>
     <figure class="profile-pic">
       <img src="images/profile2.jpg" alt="Profile Photo"/>
     </figure>
     <p class="intro">
-      哈喽 😊 这个作品集网页展示了我近期的三个项目：<a href="#section1"><u>Browsing Insights</u></a>，一个用于网页浏览历史过滤、
-      比较和可视化的Chrome扩展；<a href="#section2"><u>"Netflix影视作品分析"</u></a>，
-      通过网页爬虫和Python数据可视化展示Netflix旗下影视作品发布趋势以及IMDb上的观众反馈；和 <a href="#section3"><u>Twist-Con</u></a>，一个为增强扭转动作所关联触觉反馈
-      设计的简易VR手柄。
+      Hi😊 这个网页展示了我近期的三个项目：<a href="#section1"><u>Browsing Insights</u></a>，一个用于网页浏览历史过滤、
+      比较和可视化的Chrome扩展；<a href="#section2"><u>"Netflix影视作品分析"</u></a>：
+      通过网页爬虫和Python数据可视化，展示Netflix旗下影视作品发布趋势以及IMDb上的观众反馈；和 <a href="#section3"><u>Twist-Con</u></a>，一个增强扭转动作触觉反馈
+      的简易VR手柄。
     </p>
-      
-
         
     <!-- project 1  -->
     <div id="section1"></div>
     <hr class="divider1">
     <h1>Browsing Insights</h1>
-    <p class="subtext-b">关键词: Chrome Extension, Chrome API, HTML, CSS, JavaScript</p>
+    <p class="subtext-b">关键词: Chrome 扩展, Chrome API, HTML, CSS, JavaScript</p>
     <div class="project-pic">
       <img src="images/bi.png" alt="Browsing Insights"/>
     </div>
-    <h2>Overview</h2>
-      <p>"Browsing Insights" offers practical features for users looking to track and analyze their browsing histories. 
-        It includes an advanced search function, a smart tracking system with customizable filters for date, time, and domain, 
-        and a 'Visit Trends' feature that provides graphical insights into website visit counts over different time periods. 
-        Ideal for users who want a clear overview and a better reflection of their online activity. Available for installation from the
-        <a href="https://chromewebstore.google.com/detail/browsing-insights/bfmammhikjndhdpnlldacijbmnlmjbii"><u>Chrome Web Store</u></a>.</p>
-    <h2>About this Study</h2>
-      <p>Default browser history tools fall short in terms of functionality and flexibility for users seeking deeper insights into their 
-      browsing activities, standard browser history tabs like those in Google Chrome or Microsoft Edge only provide a chronological list
-      of visited sites, lacking functionalities for <span class = "highlight">flexible navigation</span> and <span class = "highlight">
-      reflective practices</span>. Seeing this gap, this study aimed to develop an extension to the Google Chrome browser which not only 
-      logs users' histories but offers features that assist with flexible, site-based tracking and gaining a deeper understanding of 
-      online activities through data visualization. It has capabilities for searching, sorting, customizable record-tracking by date, 
-      time, or site domain, and graphical displays of site visits across different time frames.</p>
-      <p>On the technical side, the tool was developed with Chrome history API for data retrieval, and considerations were given to the 
-      overall layout and functionalities of the extension. <span class = "highlight">User-friendly features</span>, such as infinite scrolling, debounced search,
-      and suggestion lists for typed information were integrated. Guidance was provided on the homepage, and error prevention 
-      mechanisms were embedded for various user inputs. Further, users had viewing options for the data visualization of stacked or 
-      non-stacked comparative bar charts. For flexibility, users could also decide which site or sites they wanted to include or 
-      exclude from their tracking.</p>
-    <h2>Source Code</h2>
+    <h2>概览</h2>
+      <p>“Browsing Insights”为希望细化查询，追溯和分析浏览历史的用户提供了实用功能。它包含高级搜索、自定义过滤器，
+        以及访问趋势等功能，可为用户提供不同网站访问量的图表，更好地反映和追溯用户的网上浏览活动。
+        可从<a href="https://chromewebstore.google.com/detail/browsing-insights/bfmammhikjndhdpnlldacijbmnlmjbii"><u>Chrome Web Store</u></a>
+        安装。</p>
+    <h2>项目相关</h2>
+      <p>默认的浏览器历史工具在功能和灵活性方面有所欠缺。像Google Chrome或Microsoft Edge，它们的浏览历史界面只简单地按照时间倒序展示用户访问过的网站列表。
+        缺乏<span class = "highlight">灵活性</span>和易于用户<span class = "highlight">总结，回看反思</span>的功能。看到这一问题，本研究旨在开发一个Google 
+        Chrome浏览器的扩展程序，该程序具有搜索、排序、按日期、时间段或站点域名自定义追溯浏览历史的功能，并可提供不同网站访问量的图表。</p>
+      <p>在技术方面，该工具使用Chrome历史API获取浏览数据， 融入了<span class = "highlight">用户友好型功能</span>，如无限滚动、防抖搜索、键入信息建议列表
+        、防错机制等，并在程序首页提供了基础使用指南。此外，在网站访问数据可视化中，用户可根据自己的喜好选择展示堆叠或非堆叠的比较条形图，以便更直观地理解自己的浏览行踪。
+        同时，用户可以自行选择需要追踪的网站，或者选择将某些网站排除在追踪之外。
+    <h2>源代码</h2>
     <a href="https://github.com/xjing0225/HCI-Project">https://github.com/xjing0225/HCI-Project</a>
-
-
+  
       <!-- project 2  -->
       <div id="section2"></div>
       <hr class="divider2">
-        <h1>Netflix Originals Data Analysis</h1>
-        <p class="subtext-b">Keywords: web-scraping, data visualization, selenium, matplotlib, word clouds</p>
+        <h1>Netflix影视作品分析</h1>
+        <p class="subtext-b">关键词: 网络爬虫, 数据可视化, selenium, matplotlib, 情感分析</p>
         <div class="project-pic">
           <img src="images/nf.jpg" alt="Netflix Logo" />
           <figcaption>Netflix Logo – Copyright Netflix</figcaption>
         </div>
-        <h2>Objective</h2>
-        <p>The objective of this study is to conduct a comprehensive examination of Netflix Original productions,  
-          leveraging data scraped from IMDb and focusing on their proliferation, audience reception, and thematic diversity from 2012 to 2023. 
-          The primary focus of this research is on data collection and visualization, aiming to illustrate patterns in <span class = "highlight">production volume, genre 
-          popularity, and perceived quality </span>through IMDB ratings. It seeks to provide insightful visual representations and to understand trends 
-          and preferences in Netflix Original content, highlighting the types of content that resonate with audiences and how Netflix's content 
-          creation strategies align with viewer preferences.</p>
-        <h2>Findings</h2>
-        <p>
-          The number of Netflix original productions exhibited a steady increase from 2012 to 2020, peaking in 2022 before experiencing a 
-          slight drop in 2023. From 2017 to 2020, each genre saw growth in production, with drama and comedy showing the most significant 
-          increases. Genres such as war, talk shows, westerns, and musicals remained relatively stable from 2017 to 2023. Following the peak
-           in 2022, all genres experienced a drop in 2023, except for history and thriller, which saw a noticeable increase</p>
-
-        <p>The most prevalent content ratings among the shows were MA15+/M (for mature audiences). Despite the variation in ratings, 
-          there was no significant differentiation in IMDb scores. Genre-wise, IMDb scores varied, with history and war receiving the 
-          highest scores, while horror and romance received the lowest.</p>
-
-        <p>The most produced genres align with those in the top 10 voted programs on IMDb each year (2012-2023), including Drama, Comedy,
-           Documentary, and Crime. However, IMDb scores for these top-voted programs have declined in recent years, compared to before 
-           2016. Word clouds associated with these popular programs revealed themes such as "world", "new", "relationship", "father", and 
-           "friends". The top 10 programs with the highest IMDb ratings each year predominantly fell into genres like Drama, Comedy, 
-           Crime, and Animation, with keywords in their descriptions including "family", "child", "protagonist", and "friend".</p>
-
-
-        <h2>Source Code</h2>
+        <h2>研究目标</h2>
+        <p>这个项目意在爬取、分析和可视化Netflix从2012年到2023年发布的影视作品数据，并揭示其影视<span class = "highlight">发行量趋势、种类的多样性、不同流派
+          的受欢迎程度和影迷评分 </span>。以此了解Netflix的内容创造策略是如何与观众偏好相匹配，并逐步扩大影响力的。</p>
+        <h2>研究发现</h2>
+        <p>Netflix原创作品的数量从2012年到2020年稳步上升，在2022年达到高峰，之后在2023年略有下降。从2017年到2020年，各种流派的制作逐年都有所增长，其中剧情和
+          喜剧类作品增长最为明显。战争、脱口秀、西部和音乐剧类型的作品从2017年到2023年发行数量一直相对稳定。在2022年发行量达到高峰之后，所有类型在2023年都有所下
+          降，除了历史和惊悚类型反而有所增加。</p>
+        <p>在节目的内容分级中，最常见的是MA15+/M（适合成年观众），且各评级的IMDb分数均值没有显著差异。不同流派的IMDb分数均值差异较大，其中历史和战争类作评分最高，
+          而恐怖和爱情类作品评分最低。
+          
+        <p>经过分析，可以发现Netflix发行量最多的节目类型与每年在IMDb上投票量（关注度）最高的节目类型高度一致，主要包括剧情、喜剧、纪录片和犯罪。然而，值得注意的是，
+          这些节目的IMDb评分相较2016年前呈现出下降的趋势。与这些作品相关的关键词主要包括“世界”、“新”、“关系”、“父亲”和“朋友”等。
+        </p>
+         <p>另外，Netflix每年发布的IMDb评分
+          最高的前10个节目主要归属于剧情、喜剧、犯罪和动画等类型。通过对这些节目的描述进行关键词分析，我们发现最常见的关键词包括“家庭”、“孩子”、“主角”和“朋友”。</p></p>
+        
+        <h2>源代码</h2>
         <a href="https://github.com/xjing0225/xjing0225.github.io/blob/main/Netflix%20Releases%20Data%20Analysis.ipynb" >Netflix Originals Data Analysis.ipynb</a>
 
     <!-- project 3  -->
     <div id="section3"></div>
     <hr class="divider3">
     <h1>Twist Con</h1>
-    <p class="subtext-b">Keywords: Unity 3D, VR Games, Arduino</p>
+    <p class="subtext-b">关键词: Unity 3D, VR 游戏, Arduino</p>
     <div class="project-pic">
       <img src="images/tc_head.png" alt="Twsit Con"/>
     </div>
-    <h2>Overview</h2>
-    <p>The objective of this project was to design a controller that<span class = "highlight"> enhances haptics for VR experiences.</span> Traditional VR controllers,
-      while designed to accommodate the most common use cases and interactions, fall short in delivering realistic haptic feedback for specific 
-      scenarios. That's where Twist-Con comes into place: a VR controller specifically designed to simulate the haptic sensations associated with 
-      various <span class = "highlight">twisting motions</span> and scenarios.</p>
+    <h2>概览</h2>
+    <p>该项目的目标是设计一款<span class = "highlight">增强触感体验的VR手柄</span>。传统VR手柄虽然满足常见的交互方式，但在为特定场景提供逼真的触感反馈
+      方面存在不足。而Twist-Con 就是专为模拟各种<span class = "highlight">扭动动作</span>和场景的触感而设计的VR手柄。
     <div class="project-pic">
       <img src="images/gif1.gif" alt="Twsit Con"/>
-      <figcaption>Controller w/o realistic haptic feedback</figcaption>
+      <figcaption>传统VR手柄缺少触觉反馈</figcaption>
     </div>
-    <h2>About this Study</h2>
+    <h2>项目相关</h2>
       <p>
-        At the heart of the controller is a hobby motor with a built-in encoder, which utilizes PID control logic to achieve the haptic feedback of resistence torque. This 
-        system is programmed using Arduino and a UNO board. To house the hobby motor, the controller's body is constructed from laser-cut plywood pieces that tessellate to secure the motor. This 
-        assembly is enhanced by a living hinge pattern on the arm holder for added flexibility and comfort. Additionally, three types of 
-        3D-printed knobs can be mounted atop the motoe's shaft, enabling users to engage with twisting actions on objects of various shapes.
+        控制器的主体部分是一个带内置编码器的小电机，该电机利用PID等控制逻辑来实现扭转阻力的触觉反馈，并通过Arduino和UNO板进行编程。电机的固定外壳
+        由激光切割的中纤板拼接构成，此外，该外壳还连接了了臂架，以增加灵活性和舒适性。电机轴上配置了三种不同的3D打印旋钮，使用户能够与各种形状的物体进行扭转交互。
       </p>
       <div class="project-pic">
         <img src="images/modelgif1.gif" alt="Twsit Con"/>
-        <figcaption>Components of Twist-Con</figcaption>
+        <figcaption>Twist-Con 部件展示</figcaption>
       </div>
       <div class="project-pic">
         <img src="images/modelgif2.gif" alt="Twsit Con"/>
-        <figcaption>The assembled product</figcaption>
+        <figcaption>Twist-Con 成品</figcaption>
       </div>
       <p>
-      The VR game, developed in Unity, features three distinct scenarios designed to immerse users in the tactile experiences of: manipulating a motorcycle handle, turning a peppermill cap, and winding up a toy robot.
+        这款在Unity中开发的VR游戏，设有三个独特的场景，旨在让用户沉浸在以下触感体验中：操纵摩托车把手、旋转胡椒研磨器，以及上紧玩具机器人的发条。
       </p>
       <div class="project-pic">
         <img src="images/spinny.gif" alt="Twsit Con"/>
-        <figcaption>Demo of wind up robot toy</figcaption>
+        <figcaption>发条机器人玩具场景</figcaption>
       </div>
-      <h2>Introduction Video</h2>
+      <h2>介绍视频</h2>
       <a href="https://youtu.be/AAnf_hnPTeo">https://youtu.be/AAnf_hnPTeo</a>
 
       <hr class="divider4">
-      <h1>THANK YOU &#x1F60A;</h1>
-      <a href="#section0">Back to Top  &#8593;</a>
+      <h1>谢谢 &#x1F60A;</h1>
+      <p class="subtext">&#128231;xjing225@qq.com &#x1F4DE; 15309274093  <a class = "subtext-l" href="https://www.linkedin.com/in/xiaojing-guo-3b944527b/">LinkedIn </a></p>
+      <p></p>
+      <a href="#section0">回到顶部  &#8593;</a>
   </div>
 </div>
 </body>

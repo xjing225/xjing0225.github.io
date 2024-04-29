@@ -190,8 +190,9 @@ body, html {
     content:"\1F433\1F433\1F433";
     font-size: 1.5rem;
   }
-  .divider3::after {
-    font-size: 2rem;
+  .divider4::after {
+    content:"\1F433\1F433\1F433\1F433";
+    font-size: 1.5rem;
   }
 
   .language-switch {
